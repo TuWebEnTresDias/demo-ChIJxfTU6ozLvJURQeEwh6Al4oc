@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
             // Redirigir a WhatsApp
-            window.open(`https://wa.me/0111566781369?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/0111566781369?text=${encodedMessage}`, '_blank', 'noopener,noreferrer');
             
             // Limpiar formulario
             contactForm.reset();
@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const whatsappMessage = `Hola Philo Café, me quiero suscribir al newsletter.\n\nMi email: ${email}`;
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
-            window.open(`https://wa.me/0111566781369?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/0111566781369?text=${encodedMessage}`, '_blank', 'noopener,noreferrer');
             
             newsletterForm.reset();
         });
